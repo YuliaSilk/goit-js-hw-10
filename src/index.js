@@ -51,6 +51,11 @@ function breedSelect(evt) {
   }) 
   .catch(onFetchError);
 };
+// name
+// 
+// function createMarkup(arr) {
+
+// }
 
 function onFetchError(error) {
   selector.classList.remove('is-hidden');
