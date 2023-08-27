@@ -1,12 +1,12 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 import './css/cats_style.css';
-
-import Notiflix, { Notify } from 'notiflix';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+// import Notiflix, { Notify } from 'notiflix';
 import SlimSelect from 'slim-select'
 
 
 
-const breedSelect = document.querySelector('.breed-select');
+let breedSelect = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader');
 const error = document.querySelector('.error');
 const catInfo = document.querySelector('.cat-info');
@@ -17,20 +17,26 @@ catInfo.classList.add('.is-hidden');
 
 const arrBreedsId = [];
   fetchBreeds()
-  .then(data => {
-  data.forEach(element => {
-  arrBreedsId.push({text: element.name, value: element.id});
-  });
-})
-  .catch(onFetchError);
+  .then(renderBreedSelect)
+  function renderBreedSelect(json) {
+    const markup = json.map(el => `<option value='${el.id}'>${el.name}</option>`).join('');
+    breedSelect.insertAdjacentHTML('beforeend', markup);
+    breedSelect.value = null;
+  }
+//   .then(data => {
+//   data.forEach(element => {
+//   arrBreedsId.push({text: element.name, value: element.id});
+//   });
+// })
+//   .catch(onFetchError);
 
 new SlimSelect({
     select: breedSelect,
     data: arrBreedsId
     });
 
-selector.addEventListener('change', breedSelect);
-function breedSelect(evt) {
+breedSelect.addEventListener('change', onSelectBreed);
+function onSelectBreed(evt) {
   loader.classList.replace('loader', '.is-hidden');
   error.classList.add('.is-hidden');
   catInfo.classList.add('.is-hidden');

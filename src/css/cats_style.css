@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ img {
 
 h1 {
     margin: 0;
-}
+} */
 
 .is-hidden {
     position: absolute;
@@ -32,14 +32,14 @@ h1 {
     overflow: hidden;
 }
 
-.breed-select {
+/* .breed-select {
     display: none;
     max-width: 400px;
     margin: auto;
     border-radius: 5px;
     background-color: #1e502b;
-}
-.cat-info {
+} */
+/* .cat-info {
     margin-top: 20px;
     padding: 20px;
     display: flex;
@@ -48,16 +48,16 @@ h1 {
     gap: 40px;
     background-color: #e5f3f2;
     border: 1px solid #1e502b;
-}
+} */
 
-.box-img {
+/* .box-img {
     display: flex;
     align-items: center;
 }
 
 .box {
     width: 400px;
-}
+} */
 
 .loader {
     width: 48px;
