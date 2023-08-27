@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css" />
     <title>Homework 10</title>
-    <!-- <script src="index.js" type="module"></script> -->
-    <!-- <script src ="cat-api.js" type="module"></script> -->
+   
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader"></p>
-    <!-- <span class="loader">Loading data, please wait...</span> -->
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
+    <select class="breed-select is-hidden"></select>
+    <p class="loader-text">Loading data, please wait...<span class="loader"></span></p>
+   
+    <p class="error is-hidden">Oops! Something went wrong! Try reloading the page!</p>
+    <div class="cat-info card about-cat"></div>
 
     <script src="index.js" type="module"></script>
   </body>
