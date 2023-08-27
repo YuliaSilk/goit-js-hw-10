@@ -2,7 +2,8 @@ import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 import './css/cats_style.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 // import Notiflix, { Notify } from 'notiflix';
-import SlimSelect from 'slim-select'
+import SlimSelect from 'slim-select';
+import './css/slimselect.css';
 
 
 
@@ -68,4 +69,6 @@ function onFetchError(error) {
   loader.classList.replace('loader', 'is-hidden');
 
   Notify.failure('Oops! Something went wrong! Try reloading the page!');
-};
+}
+
+
