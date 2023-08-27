@@ -25,12 +25,12 @@ const arrBreedsId = [];
   .catch(onFetchError);
 
 new SlimSelect({
-    select: selector,
+    select: breedSelect,
     data: arrBreedsId
     });
 
-selector.addEventListener('change', onSelectBreed);
-function onSelectBreed(evt) {
+selector.addEventListener('change', breedSelect);
+function breedSelect(evt) {
   loader.classList.replace('loader', '.is-hidden');
   error.classList.add('.is-hidden');
   catInfo.classList.add('.is-hidden');

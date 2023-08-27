@@ -4,8 +4,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif, 'Raleway', sans-serif, 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: #fff9f9;
     color: #040132;
     line-height: 1.5;
