@@ -1,15 +1,14 @@
-@import './slimselect.css';
+
 @import './loader_style.css';
 
-
-html,
+/* html,
 body {
     height: 100%;
 }
 
 body {
     background: #d8f6f2da;
-}
+} */
 
 .is-hidden {
     position: absolute;
@@ -34,7 +33,7 @@ font-family: 'Montserrat', sans-serif;
 font-size: 20px;
 }
 
-.cat-info-card {
+.card {
     display: flex;
     width: 600px;
     gap: 20px;

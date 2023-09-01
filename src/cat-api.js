@@ -1,5 +1,5 @@
 import axios from "axios";
-// axios.defaults.headers.common["x-api-key"] = "live_tK06ufFFluRVey2AUGuoILqGOkBmyoZqONcJSoW1VsReyMDs92CF0FaFvvpO6M7S";
+axios.defaults.headers.common["x-api-key"] = "live_tK06ufFFluRVey2AUGuoILqGOkBmyoZqONcJSoW1VsReyMDs92CF0FaFvvpO6M7S";
 
 
 // axios.get('https://api.thecatapi.com/v1/breeds').then((response) => {
@@ -21,7 +21,7 @@ function fetchCatByBreed(breedId) {
 }
 
 
-export { fetchBreeds, fetchCatByBreed }
+// export { fetchBreeds, fetchCatByBreed }
 
 
 // export function fetchBreeds() {
