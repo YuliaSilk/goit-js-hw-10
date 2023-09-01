@@ -23,25 +23,16 @@ body {
     overflow: hidden;
 }
 
-.loader-text {
-   
-display: flex;
-align-items: center;
-justify-content: center;
-
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-}
-
 .card {
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
     width: 600px;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+    
 }
 
 .header {
@@ -49,14 +40,16 @@ font-family: 'Montserrat', sans-serif;
 font-size: 30px;
 font-weight: 700;
 line-height: 1.6;
+text-align: center;
 }
 
 .image {
 width: 500px;
+align-self: center; 
 margin-bottom: 20px;
 border-radius: 10px;
-text-align: center;
 
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .description {
@@ -69,7 +62,7 @@ font-family: 'Montserrat', sans-serif;
 font-size: 16px;
 font-weight: 300;
 line-height: 1.2;
-text-align: right;
+text-align: left;
 }
 
 
